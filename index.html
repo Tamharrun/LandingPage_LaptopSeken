@@ -25,15 +25,67 @@
             font-size: 25px;
             margin-top: 20px;
             color: aliceblue;
+            font-family: Arial, Helvetica, sans-serif;
         }
         .logodell {
             width: 60px;
             margin-top: 10px;
         }
+        .konten-container > div {
+            /* background-color: #f1f1f1; */
+            font-size: 25px;
+            max-width: 900px;
+            margin: 25px auto;
+        }
+        .tentang {
+            border-bottom-style: solid;
+            color: white;
+        }
+        .tentang > p {
+            text-align: center;
+            font-size: 25px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .fitur {
+            font-family: Arial, Helvetica, sans-serif;
+            border: 4px solid rgb(255, 128, 0);
+            background-color: #f1f1f1;
+            border-radius: 15px;
+            text-align: left;
+        }
+        .tombol {
+            padding: 10px 430px;
+            margin: 0px 0px;
+            border: 4px solid rgb(255, 128, 0);
+            border-radius: 15px;
+            color: white;
+            background-color: rgb(255, 128, 0);
+        }
+        .tombolHandler {
+            padding: auto;
+            justify-content: center;
+            display: flex;
+            margin: 0px;
+        }
+        .caption {
+            margin-left: 20px;
+        }
+        .captionList {
+            margin-left: 10px;
+        }
+        .copyright {
+            color: white;
+            text-align: center;
+            font-size: 15px;
+            border-top-style: solid;
+            margin: 25px auto;
+            max-width: 900px;
+            padding-top: 10px;
+        }
 
     </style>
 </head>
-<body>
+<header>
     <div class="flex-container">
         <div>
             <p class="nama">Laptop Seken</p>
@@ -42,6 +94,45 @@
             <img class="logodell" src="https://upload.wikimedia.org/wikipedia/commons/4/48/Dell_Logo.svg" alt="logo_dell">
         </div>
     </div>
-
+</header>
+<body>
+    <div class="konten-container">
+        <div class="tentang">
+            <p>
+                Laptop Seken adalah tempat jualan laptop bekas berkualitas <br>
+                dan harga tidak mungkin diatas harga laptop baru yang ada di toko-toko
+            </p>
+        </div>
+        <div class="fitur">
+            <p class="caption">
+                Di Laptop Seken kami percaya laptop murah belum tentu jelek
+            </p>
+            <ul class="captionList">
+                <li>Garansi 6 bulan</li>
+                <li>Bisa pembayaran dengan angsuran</li>
+                <li>Menerima tukar tambah</li>
+            </ul>
+        </div>
+        <div class="fitur">
+            <p class="caption">
+                keunggulan beli di Laptop Seken
+            </p>
+            <ol class="captionList">
+                <li>Dijamin aman</li>
+                <li>No tipu-tipu</li>
+                <li>barang tidak sesuai, uang kembali</li>
+            </ol>
+        </div>
+    </div>
+    <div class="tombolHandler">
+        <div>
+            <button class="tombol">Daftar</button>
+        </div>
+    </div>
 </body>
+<footer >
+    <div class="copyright">
+        <em>Copyright</em> Tamharrun 2024
+    </div>
+</footer>
 </html>
